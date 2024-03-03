@@ -1,0 +1,11 @@
+header
+    .header 
+        section.header__logo 
+            img(src="img/" alt="лого")
+        section.header__navigation 
+            nav 
+                ul 
+                    each href, value in {"#": "About", "#": "Shop", "#": "Contact"}
+                        li 
+                            a(src={src}) 
+                                | #{value}
