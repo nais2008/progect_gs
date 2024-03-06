@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,5 +14,46 @@
 }
 body{
     font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
+    background-color: #F8F8F8;
+
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+}
+
+.container{
+    max-width: 1285px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1B1A1F;
+    color: #fff;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 30px;
+        border-bottom: 1px solid #8D8C8F;
+
+        &__navigation nav ul{
+            display: flex;
+            gap: 52px;
+
+            li a{
+                font-size: 18px;
+                line-height: 25.2px;
+                color: #fff;
+            }
+        }
+        &__blocks{
+            display: flex;
+            gap:20px;
+        }
+    }
 }

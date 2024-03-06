@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +15,52 @@
 
 body {
   font-weight: 400;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #F8F8F8;
+}
+body a {
+  text-decoration: none;
+}
+body li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1285px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1B1A1F;
+  color: #fff;
+}
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 30px;
+  border-bottom: 1px solid #8D8C8F;
+}
+header .header__navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 52px;
+}
+header .header__navigation nav ul li a {
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #fff;
+}
+header .header__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }

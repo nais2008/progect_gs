@@ -1,11 +1,18 @@
 header
-    .header 
+    .header.container 
         section.header__logo 
-            img(src="img/" alt="лого")
+            img(src="img/logo.png" alt="лого")
         section.header__navigation 
             nav 
                 ul 
-                    each href, value in {"#": "About", "#": "Shop", "#": "Contact"}
+                    each value, key in ['About', 'Shop', 'Contact']
                         li 
-                            a(src={src}) 
-                                | #{value}
+                            a(href="#")= value
+        sectiom.header__blocks 
+            img(src="img/search.svg", alt="search")
+            img(src="img/cart.svg", alt="cart")
+            img(src="img/user.svg", alt="account")
+    main 
+        .container 
+            div
+                
