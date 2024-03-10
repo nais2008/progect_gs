@@ -1,7 +1,7 @@
 extends ../layouts/main_layout
 
 block content 
-    main 
+    main.main
         // category
         section.main__category 
             .container 
@@ -22,4 +22,13 @@ block content
                                         p Hybrid Bikes
                                     li 
                                         p Kids Bikes
-                            
+                    .main__categoty-images 
+                        .main__category-images--slider 
+                            swiper-container.mySwiper(pagination='true' pagination-type='fraction')
+                                swiper-slide 
+                                    img(src="img/road_bike1.png", alt="" width="576")
+                                swiper-slide
+                                    img(src="img/road_bike2.png", alt="" width="576")
+                                swiper-slide
+                                    img(src="img/road_bike3.png", alt="" width="576")
+                                swiper-slide Slide 4 

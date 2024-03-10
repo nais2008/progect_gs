@@ -1,11 +1,37 @@
 @import "../moduls/header.scss";
 @import "../moduls/footer.scss";
 
-main{
+main.main{
     p{
         font-family: "Bellota Text", sans-serif;
         font-weight: 400;
         line-height: 25.2px;
         font-size: 18px;
     }
+
+    .main__category{
+        margin-top: 100px;
+
+        .container{
+            div{
+                .main__category-title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &-navigation{
+                        display: flex;
+                        flex-direction: column;
+                        gap:10px;
+
+                        nav ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap:10px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
