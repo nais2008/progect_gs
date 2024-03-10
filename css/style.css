@@ -28,6 +28,7 @@ body li {
 .container {
   max-width: 1285px;
   margin: 0 auto;
+  padding: 10px;
 }
 
 header {
@@ -46,6 +47,7 @@ header .header {
           align-items: center;
   padding-block: 30px;
   border-bottom: 1px solid #8D8C8F;
+  padding-inline: 40px;
 }
 header .header__navigation nav ul {
   display: -webkit-box;
@@ -57,6 +59,11 @@ header .header__navigation nav ul li a {
   font-size: 18px;
   line-height: 25.2px;
   color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+header .header__navigation nav ul li a:hover {
+  border-bottom: 1px solid #F8F8F8;
 }
 header .header__blocks {
   display: -webkit-box;
@@ -67,4 +74,41 @@ header .header__blocks {
 header .header__blocks img {
   width: 24px;
   height: auto;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+header .header__blocks img:hover {
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+          filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+header main .wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header main .wraper .header__left_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header main .wraper .header__left_block .header__left_block-ss ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
 }

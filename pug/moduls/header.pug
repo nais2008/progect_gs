@@ -1,18 +1,41 @@
 header
-    .header.container 
+    // header-navigation
+    .header.header-top
         section.header__logo 
-            img(src="img/logo.png" alt="лого")
+            a(href="#") 
+                img(src="img/logo.png" alt="лого")
         section.header__navigation 
             nav 
                 ul 
-                    each value, key in ['About', 'Shop', 'Contact']
+                    each value in ['About', 'Shop', 'Contact']
                         li 
                             a(href="#")= value
         sectiom.header__blocks 
             img(src="img/search.svg", alt="search")
             img(src="img/cart.svg", alt="cart")
             img(src="img/user.svg", alt="account")
-    main 
-        .container 
-            div
-                
+    // header-main
+    main.header-wraper
+        div.wraper
+            section.header__left_block 
+                .header__left_block-ss 
+                    ul 
+                        li 
+                            img(src="/img/", alt="google")
+                        li 
+                            img(src="/img/", alt="tw")
+                        li 
+                            img(src="/img/", alt="in")
+                        li 
+                            img(src="/img/", alt="inst")
+                .header__left_block-info 
+                    img(src="/img/logo_main.png", alt="logo")
+                    p 
+                        | We build only the best, customized to your exacting demands
+                    button 
+                        | show now 
+                    video(src="")  
+            .header__right_block 
+                img(src="", alt="bike")
+                span 
+                img(src="", alt="")

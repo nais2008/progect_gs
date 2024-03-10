@@ -28,6 +28,7 @@ body{
 .container{
     max-width: 1285px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 header{
@@ -40,6 +41,7 @@ header{
         align-items: center;
         padding-block: 30px;
         border-bottom: 1px solid #8D8C8F;
+        padding-inline: 40px;
 
         &__navigation nav ul{
             display: flex;
@@ -49,6 +51,11 @@ header{
                 font-size: 18px;
                 line-height: 25.2px;
                 color: #fff;
+                transition: all .2s;
+
+                &:hover{
+                    border-bottom: 1px solid #F8F8F8;
+                }
             }
         }
         &__blocks{
@@ -58,6 +65,30 @@ header{
             img{
                 width: 24px;
                 height: auto;
+                transition: filter .2s;
+
+                &:hover{
+                    cursor: pointer;
+                    filter: drop-shadow(0 0 5px rgba(255, 255, 255, .7));
+                }
+            }
+        }
+    }
+    main{
+        .wraper{
+            display: flex;
+
+            .header__left_block{
+                display: flex;
+                flex-direction: row;
+
+                .header__left_block-ss ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: flex-end;
+                    height: 100%;
+                }
             }
         }
     }
