@@ -24,6 +24,20 @@ body a {
 body li {
   list-style: none;
 }
+body h1 {
+  font-weight: 500;
+  font-size: 64px;
+  font-family: "Playfair Display", serif;
+  width: 527px;
+  line-height: 89.6px;
+}
+body h3 {
+  font-weight: 500;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  border-bottom: 4px solid rgb(235, 76, 86);
+  line-height: 39.2px;
+}
 
 .container {
   max-width: 1285px;
@@ -88,7 +102,6 @@ header main .wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px 40px;
   height: 800px;
 }
 header main .wraper .header__left_block {
@@ -100,6 +113,7 @@ header main .wraper .header__left_block {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 40px;
+  padding: 60px 40px;
 }
 header main .wraper .header__left_block .header__left_block-ss ul {
   display: -webkit-box;
@@ -152,4 +166,37 @@ header main .wraper .header__left_block-info button:hover {
 }
 header main .wraper .header__left_block-info iframe {
   margin-left: 30%;
+}
+header main .wraper .header__right_block {
+  position: relative;
+  width: 100%;
+}
+header main .wraper .header__right_block img:nth-child(1) {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+header main .wraper .header__right_block img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+header main .wraper .header__right_block span {
+  display: block;
+  background-color: rgb(47, 46, 48);
+  width: 655px;
+  height: 576px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 0;
+}
+
+main p {
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 400;
+  line-height: 25.2px;
+  font-size: 18px;
 }
