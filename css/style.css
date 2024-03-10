@@ -88,6 +88,8 @@ header main .wraper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 60px 40px;
+  height: 800px;
 }
 header main .wraper .header__left_block {
   display: -webkit-box;
@@ -97,6 +99,7 @@ header main .wraper .header__left_block {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 40px;
 }
 header main .wraper .header__left_block .header__left_block-ss ul {
   display: -webkit-box;
@@ -111,4 +114,42 @@ header main .wraper .header__left_block .header__left_block-ss ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 100%;
+}
+header main .wraper .header__left_block-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+header main .wraper .header__left_block-info p {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 300;
+  width: 388px;
+}
+header main .wraper .header__left_block-info button {
+  background-color: rgb(235, 76, 86);
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  line-height: 33px;
+  text-transform: uppercase;
+  padding-block: 12px;
+  width: 200px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+header main .wraper .header__left_block-info button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+header main .wraper .header__left_block-info iframe {
+  margin-left: 30%;
 }

@@ -77,10 +77,13 @@ header{
     main{
         .wraper{
             display: flex;
-
+            padding: 60px 40px;
+            height:800px
+;
             .header__left_block{
                 display: flex;
                 flex-direction: row;
+                gap:40px;
 
                 .header__left_block-ss ul{
                     display: flex;
@@ -88,6 +91,39 @@ header{
                     gap: 10px;
                     justify-content: flex-end;
                     height: 100%;
+                }
+                &-info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    p{
+                        font-size: 22px;
+                        line-height: 33px;
+                        font-family: "Bellota Text", sans-serif;
+                        font-weight: 300;
+                        width: 388px;
+                    }
+                    button{
+                        background-color: rgba(235, 76, 86, 1);
+                        font-size: 16px;
+                        color: #fff;
+                        border:none;
+                        line-height: 33px;
+                        text-transform: uppercase;
+                        padding-block: 12px;
+                        width: 200px;
+                        transition: all .2s;
+
+                        &:hover{
+                            cursor: pointer;
+                            background-color: transparent;
+                            border:1px solid #fff;
+                        }
+                    }
+                    iframe{
+                        margin-left: 30%;
+                    }
                 }
             }
         }
