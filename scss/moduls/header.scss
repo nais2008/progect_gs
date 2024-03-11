@@ -12,10 +12,15 @@
         box-sizing: inherit;
     }
 }
+:root{
+    --red_back:rgba(235, 76, 86, 1);
+    --back_header: #1B1A1F;
+    --back_body: #F8F8F8;
+}
 body{
     font-weight: 400;
     font-family: "Poppins", sans-serif;
-    background-color: #F8F8F8;
+    background-color: var(--back_body);
 
     a{
         text-decoration: none;
@@ -34,7 +39,7 @@ body{
         font-weight: 500;
         font-size: 28px;
         font-family: "Playfair Display", serif;
-        border-bottom: 4px solid rgba(235, 76, 86, 1);
+        border-bottom: 4px solid var(--red_back);
         line-height: 39.2px;
     }
 }
@@ -46,7 +51,7 @@ body{
 }
 
 header{
-    background-color: #1B1A1F;
+    background-color: var(--back_header);
     color: #fff;
 
     .header{
@@ -105,6 +110,14 @@ header{
                     gap: 10px;
                     justify-content: flex-end;
                     height: 100%;
+
+                    li a img{
+                        transition: filter .2s;
+
+                        &:hover{
+                            filter: drop-shadow(0 0 5px rgba(255, 255, 255, .7));
+                        }
+                    }
                 }
                 &-info{
                     display: flex;
@@ -119,7 +132,7 @@ header{
                         width: 388px;
                     }
                     button{
-                        background-color: rgba(235, 76, 86, 1);
+                        background-color: var(--red_back);
                         font-size: 16px;
                         color: #fff;
                         border:none;

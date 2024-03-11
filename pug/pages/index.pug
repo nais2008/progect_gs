@@ -5,7 +5,7 @@ block content
         // category
         section.main__category 
             .container 
-                div 
+                .wraper
                     .main__category-title 
                         h1
                             | Our Most Popular bike category
@@ -22,13 +22,16 @@ block content
                                         p Hybrid Bikes
                                     li 
                                         p Kids Bikes
-                    .main__categoty-images 
-                        .main__category-images--slider 
+                    .main__category-images 
+                        .main__category-images-slider 
                             swiper-container.mySwiper(pagination='true' pagination-type='fraction')
                                 swiper-slide 
-                                    img(src="img/road_bike1.png", alt="" width="576")
+                                    img(src="img/road_bike1.png", alt="")
                                 swiper-slide
-                                    img(src="img/road_bike2.png", alt="" width="576")
+                                    img(src="img/road_bike2.png", alt="")
                                 swiper-slide
-                                    img(src="img/road_bike3.png", alt="" width="576")
-                                swiper-slide Slide 4 
+                                    img(src="img/road_bike3.png", alt="")
+                                swiper-slide
+                                    img(src="img/road_bike4.png", alt="")
+                        .main__category-images-photo 
+                            img(src="img/road_bike5.png", alt="")
