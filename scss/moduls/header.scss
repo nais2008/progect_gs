@@ -6,6 +6,7 @@ $red_back: rgba(235, 76, 86, 1);
 $back_header: #1B1A1F;
 $back_body: #F8F8F8;
 $white: #fff;
+$back_color_block: rgba(245, 245, 245, 1);
 
 @mixin button($back_color, $color_text, $border){
     color:$color_text;
@@ -18,6 +19,7 @@ $white: #fff;
     --back_header: #{$back_header};
     --back_body: #{$back_body};
     --white: #{$white};
+    --back_color_block: #{$back_color_block};
 }
 * {
     margin: 0;

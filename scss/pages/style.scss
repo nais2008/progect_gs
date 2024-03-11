@@ -73,5 +73,92 @@ main.main{
     .main__product{
         padding-block: 100px;
         background-color: var(--white);
+
+        .container .wraper{
+            .main__product-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p{
+                    font-size: 22px;
+                    font-weight: 300;
+                    width: 477px;
+                    line-height: 33px;
+                }
+            }
+            .main__product-wraper{
+                display: flex;
+                flex-direction: column;
+                gap:40px;
+                align-items: center;
+
+                &-blocks{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .block{
+                        position: relative;
+                        background-color: var(--back_color_block);
+
+                        &1{
+                            width:547px;
+                            height:392px;
+                        }
+                        &2{
+                            width: 684px;
+                            height: 624px;
+                            margin-bottom: 50px;;
+                        }
+                        &3{
+                            width: 547px;
+                            height: 392px;
+                            margin-left: calc((547 * 0.5 - 150) * 1px);
+                        }
+                        &4{
+                            width:547px;
+                            height: 392px;
+                        }
+                        i{
+                            position: absolute;
+                            right:20px;
+                            top: 10px;
+                            font-size: 24px;
+                            cursor: pointer;
+                        }
+                        div{
+                            position: absolute;
+                            left:10px;
+                            bottom:20px;
+
+                            h4{
+                                font-weight: 400;
+                                font-size: 22px;
+                                line-height: 33px;
+                            }
+                            b{
+                                font-weight: 600;
+                                font-size: 22px;
+                                line-height: 33px;
+                            }
+                        }
+                    }
+                }
+                button{
+                    @include button(transparent, #000, 1px solid #000);
+                    padding: 12px 32px;
+                    font-size: 20px;
+                    line-height: 33px;
+                    font-family: "Bellota Text", sans-serif;
+                    transition: all .2s;
+
+                    &:hover{
+                        cursor: pointer;
+                        @include button(var(--red_back), var(--white), none)
+                    }
+                }
+            }
+        }
     }
 }
