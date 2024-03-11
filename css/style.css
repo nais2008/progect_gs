@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&display=swap");
+:root {
+  --red_back:rgb(235, 76, 86);
+  --back_header: #1B1A1F;
+  --back_body: #F8F8F8;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +18,6 @@
 * ::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-}
-
-:root {
-  --red_back:rgba(235, 76, 86, 1);
-  --back_header: #1B1A1F;
-  --back_body: #F8F8F8;
 }
 
 body {
@@ -53,7 +54,7 @@ body h3 {
 
 header {
   background-color: var(--back_header);
-  color: #fff;
+  color: var(--white);
 }
 header .header {
   display: -webkit-box;
@@ -78,7 +79,7 @@ header .header__navigation nav ul {
 header .header__navigation nav ul li a {
   font-size: 18px;
   line-height: 25.2px;
-  color: #fff;
+  color: var(--white);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -164,21 +165,22 @@ header main .wraper .header__left_block-info p {
   width: 388px;
 }
 header main .wraper .header__left_block-info button {
-  background-color: var(--red_back);
   font-size: 16px;
-  color: #fff;
-  border: none;
   line-height: 33px;
   text-transform: uppercase;
   padding-block: 12px;
   width: 200px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  color: var(--white);
+  background-color: var(--red_back);
+  border: none;
 }
 header main .wraper .header__left_block-info button:hover {
   cursor: pointer;
+  color: var(--white);
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
 }
 header main .wraper .header__left_block-info iframe {
   margin-left: 30%;
@@ -277,12 +279,12 @@ main.main .main__category .container .wraper .main__category-images .main__categ
 main.main .main__category .container .wraper .main__category-images .main__category-images-slider swiper-container {
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: var(--white);
 }
 main.main .main__category .container .wraper .main__category-images .main__category-images-slider swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,10 +297,14 @@ main.main .main__category .container .wraper .main__category-images .main__categ
 }
 main.main .main__category .container .wraper .main__category-images .main__category-images-slider swiper-slide img {
   display: block;
-  width: 550px !important;
+  width: 550px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: -webkit-grab;
   cursor: grab;
+}
+main.main .main__product {
+  padding-block: 100px;
+  background-color: var(--white);
 }

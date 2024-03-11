@@ -2,6 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&display=swap');
 
+$red_back: rgba(235, 76, 86, 1);
+$back_header: #1B1A1F;
+$back_body: #F8F8F8;
+$white: #fff;
+
+@mixin button($back_color, $color_text, $border){
+    color:$color_text;
+    background-color: $back_color;
+    border:$border;
+}
+
+:root{
+    --red_back:#{$red_back};
+    --back_header: #{$back_header};
+    --back_body: #{$back_body};
+    --white: #{$white};
+}
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +28,6 @@
     ::before{
         box-sizing: inherit;
     }
-}
-:root{
-    --red_back:rgba(235, 76, 86, 1);
-    --back_header: #1B1A1F;
-    --back_body: #F8F8F8;
 }
 body{
     font-weight: 400;
@@ -52,7 +64,7 @@ body{
 
 header{
     background-color: var(--back_header);
-    color: #fff;
+    color: var(--white);
 
     .header{
         display: flex;
@@ -69,7 +81,7 @@ header{
             li a{
                 font-size: 18px;
                 line-height: 25.2px;
-                color: #fff;
+                color: var(--white);
                 transition: all .2s;
 
                 &:hover{
@@ -132,20 +144,17 @@ header{
                         width: 388px;
                     }
                     button{
-                        background-color: var(--red_back);
                         font-size: 16px;
-                        color: #fff;
-                        border:none;
                         line-height: 33px;
                         text-transform: uppercase;
                         padding-block: 12px;
                         width: 200px;
                         transition: all .2s;
+                        @include button(var(--red_back), var(--white), none);
 
                         &:hover{
                             cursor: pointer;
-                            background-color: transparent;
-                            border:1px solid #fff;
+                            @include button(transparent, var(--white), 1px solid var(--white));
                         }
                     }
                     iframe{
