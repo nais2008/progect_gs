@@ -161,4 +161,55 @@ main.main{
             }
         }
     }
+    .main__sponsor{
+        .container .main__sponsor-wraper{
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+            padding-block: 60px;
+        }
+    }
+    .main__info{
+        .container .main__info-wraper{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .main__info-wraper-firstBlock{
+                display: flex;
+                justify-content: space-between;
+
+                &__text{
+                    display: flex;
+                    flex-direction: column;
+                    gap:20px;
+
+                    h2{
+                        font-size: 40px;
+                        line-height: 64px;
+                        font-weight: 500;
+                        font-family: "Playfair Display", serif;
+                    }
+                    p{
+                        font-size: 22px;
+                        width: 477px;
+                        line-height: 33px;
+                    }
+                    a{
+                        font-size: 22px;
+                        text-decoration: underline;
+                        text-decoration:solid underline 4px;
+                        font-weight: 400;
+                        color: #000;
+                        transition: all ;
+                        font-family: "Bellota Text", sans-serif;
+
+                        &:hover{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

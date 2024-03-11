@@ -410,3 +410,66 @@ main.main .main__product .container .wraper .main__product-wraper button:hover {
   background-color: var(--red_back);
   border: none;
 }
+main.main .main__sponsor .container .main__sponsor-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-block: 60px;
+}
+main.main .main__info .container .main__info-wraper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock__text h2 {
+  font-size: 40px;
+  line-height: 64px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock__text p {
+  font-size: 22px;
+  width: 477px;
+  line-height: 33px;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock__text a {
+  font-size: 22px;
+  text-decoration: underline;
+  -webkit-text-decoration: solid underline 4px;
+          text-decoration: solid underline 4px;
+  font-weight: 400;
+  color: #000;
+  -webkit-transition: all;
+  transition: all;
+  font-family: "Bellota Text", sans-serif;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock__text a:hover {
+  font-weight: 600;
+}
