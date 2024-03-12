@@ -186,6 +186,8 @@ header main .wraper .header__left_block-info button:hover {
 }
 header main .wraper .header__left_block-info iframe {
   margin-left: 30%;
+  width: 152px;
+  height: 122px;
 }
 header main .wraper .header__right_block {
   position: relative;
