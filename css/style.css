@@ -337,6 +337,12 @@ footer .footer__email-ss nav ul li img {
 footer .footer__email-ss nav ul li:nth-child(2) img, footer .footer__email-ss nav ul li:nth-child(4) img {
   -webkit-transform: translate(40%, 40%);
           transform: translate(40%, 40%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+footer .footer__email-ss nav ul li:hover img {
+  -webkit-filter: drop-shadow(0 0 5px var(--white));
+          filter: drop-shadow(0 0 5px var(--white));
 }
 footer .footer__email-ss p {
   color: #fff;
