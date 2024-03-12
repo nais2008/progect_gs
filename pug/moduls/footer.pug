@@ -1,1 +1,35 @@
 footer
+    .footer 
+        section.footer__email 
+            .footer__email-form 
+                h2 Subscribe Our Newsletter
+                div 
+                    input(type="text", placeholder="Your email address")
+                    button 
+                        img(src="img/email.svg", alt="")
+            .footer__email-ss 
+                nav 
+                    ul 
+                        each src in ["img/inst.svg", "img/path.svg", "img/tw.svg", "img/yt.svg"]
+                            li
+                                a(href="#") 
+                                    img(src=src, alt="")
+                p 
+                    | &copy; 2024 My Website. All rights reserves.
+        .blocks
+            section.footer__company 
+                h2 
+                    | Company
+                nav
+                    ul 
+                        each text in ["About us", "Blog", "Contact us", "Pricing", "Testimonials"]
+                            li 
+                                a(href="#") #{text} 
+            section.footer__support
+                h2 
+                    | Support
+                nav 
+                    ul 
+                        each text in ["Help center", "Terms oƒ service", "Legal", "Privacy policy", "Status"]
+                            li 
+                                a(href="#") #{text}

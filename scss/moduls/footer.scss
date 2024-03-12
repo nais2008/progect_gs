@@ -1,0 +1,110 @@
+footer{
+    background-color: var(--back_footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 100px;
+
+    h2{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        color: var(--white);
+        font-family: "Playfair Display", serif;
+    }
+    a{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        color: rgba(200, 200, 200, 1);
+        font-family: "Bellota Text", sans-serif;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 980px;
+
+        &__email{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            &-form{
+                display: flex;
+                flex-direction: column;
+                gap:30px;
+                
+                div{
+                    display: flex;
+                    position: relative;
+
+                    input{
+                        width: 100%;
+                        padding-block: 15px;
+                        padding-left: 15px;
+                        background-color: color-mix(in srgb, var(--back_footer), #666);
+                        color: var(--white);
+                        border: none;
+
+                        &::placeholder{
+                            color: color-mix(in srgb, var(--white), #666);
+                        }
+                    }
+                    button{
+                        position: absolute;
+                        right: 15px;
+                        background-color: transparent;
+                        border:none;
+                        transform: translateY(70%);
+                        cursor: pointer;
+                    }
+                }
+            }
+            &-ss{
+                display: flex;
+                flex-direction: column;
+                gap:20px;
+
+                nav ul{
+                    display: flex;
+                    gap:16px;
+
+                    li{
+                        width: 32px;
+                        height: 32px;
+                        background-color: color-mix(in srgb, var(--back_footer), #666);
+                        border-radius: 50%;
+
+                        img{
+                            transform: translate(30%, 30%);
+                        }
+                        &:nth-child(2) img,
+                        &:nth-child(4) img{
+                            transform: translate(40%, 40%);
+                        }
+                    }
+                }
+                p{
+                    color:#fff;
+                }
+            }
+        }
+        .blocks{
+            display: flex;
+            gap:100px;
+
+            .footer__company,
+            .footer__support{
+                display: flex;
+                flex-direction: column;
+                gap:24px;
+
+                nav ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap:12px;
+                }
+            }
+        }
+    }
+}

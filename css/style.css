@@ -7,6 +7,7 @@
   --back_body: #F8F8F8;
   --white: #fff;
   --back_color_block: rgb(245, 245, 245);
+  --back_footer: rgb(27, 26, 31) ;
 }
 
 * {
@@ -213,6 +214,162 @@ header main .wraper .header__right_block span {
   z-index: 0;
 }
 
+footer {
+  background-color: var(--back_footer);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-block: 100px;
+}
+footer h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--white);
+  font-family: "Playfair Display", serif;
+}
+footer a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: rgb(200, 200, 200);
+  font-family: "Bellota Text", sans-serif;
+}
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 980px;
+}
+footer .footer__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+footer .footer__email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+footer .footer__email-form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+footer .footer__email-form div input {
+  width: 100%;
+  padding-block: 15px;
+  padding-left: 15px;
+  background-color: color-mix(in srgb, var(--back_footer), #666);
+  color: var(--white);
+  border: none;
+}
+footer .footer__email-form div input::-webkit-input-placeholder {
+  color: color-mix(in srgb, var(--white), #666);
+}
+footer .footer__email-form div input::-moz-placeholder {
+  color: color-mix(in srgb, var(--white), #666);
+}
+footer .footer__email-form div input:-ms-input-placeholder {
+  color: color-mix(in srgb, var(--white), #666);
+}
+footer .footer__email-form div input::-ms-input-placeholder {
+  color: color-mix(in srgb, var(--white), #666);
+}
+footer .footer__email-form div input::placeholder {
+  color: color-mix(in srgb, var(--white), #666);
+}
+footer .footer__email-form div button {
+  position: absolute;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+  cursor: pointer;
+}
+footer .footer__email-ss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+footer .footer__email-ss nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+footer .footer__email-ss nav ul li {
+  width: 32px;
+  height: 32px;
+  background-color: color-mix(in srgb, var(--back_footer), #666);
+  border-radius: 50%;
+}
+footer .footer__email-ss nav ul li img {
+  -webkit-transform: translate(30%, 30%);
+          transform: translate(30%, 30%);
+}
+footer .footer__email-ss nav ul li:nth-child(2) img, footer .footer__email-ss nav ul li:nth-child(4) img {
+  -webkit-transform: translate(40%, 40%);
+          transform: translate(40%, 40%);
+}
+footer .footer__email-ss p {
+  color: #fff;
+}
+footer .footer .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+footer .footer .blocks .footer__company,
+footer .footer .blocks .footer__support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+footer .footer .blocks .footer__company nav ul,
+footer .footer .blocks .footer__support nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
 main.main p {
   font-family: "Bellota Text", sans-serif;
   font-weight: 400;
@@ -319,6 +476,7 @@ main.main .main__product .container .wraper .main__product-title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 100px;
 }
 main.main .main__product .container .wraper .main__product-title p {
   font-size: 22px;
@@ -469,7 +627,39 @@ main.main .main__info .container .main__info-wraper .main__info-wraper-firstBloc
   -webkit-transition: all;
   transition: all;
   font-family: "Bellota Text", sans-serif;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 main.main .main__info .container .main__info-wraper .main__info-wraper-firstBlock__text a:hover {
   font-weight: 600;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-secondBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-block: 100px;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-secondBlock .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-secondBlock .block h4 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 44.8px;
+  font-family: "Playfair Display", serif;
+}
+main.main .main__info .container .main__info-wraper .main__info-wraper-secondBlock .block p {
+  width: 321px;
+  font-size: 22px;
+  line-height: 33px;
 }

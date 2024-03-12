@@ -6,7 +6,7 @@ block content
         section.main__category 
             .container 
                 .wraper
-                    .main__category-title 
+                    article.main__category-title 
                         h1
                             | Our Most Popular bike category
                         .main__category-title-navigation 
@@ -39,7 +39,7 @@ block content
         section.main__product
             .container 
                 .wraper 
-                    .main__product-title 
+                    article.main__product-title 
                         h1 
                             | Explore Our Product
                         p 
@@ -72,6 +72,7 @@ block content
                                 i ↗
                         button(type="submit") 
                             | Explore All
+        // main-sponsor
         section.main__sponsor 
             .container 
                 .main__sponsor-wraper
@@ -81,15 +82,29 @@ block content
                     img(src="img/uber.svg", alt="")
                     img(src="img/miro.svg", alt="")
                     img(src="img/discord.svg", alt="")
+        // main-info
         section.main__info 
             .container 
                 .main__info-wraper
                     .main__info-wraper-firstBlock
                         img(src="img/bike_info.png", alt="")
-                        .main__info-wraper-firstBlock__text 
+                        article.main__info-wraper-firstBlock__text 
                             h2 
                                 | Why choose Lamere?
                             p 
                                 | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
                             a(href="")
-                                | Read more 
+                                | Read more
+                    .main__info-wraper-secondBlock 
+                        .block.block1 
+                            h4 Service Repiar
+                            p
+                                | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia.
+                        .block.block2
+                            h4 Bike Accessories
+                            p
+                                | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia.
+                        .block.block3 
+                            h4 Warraty & Guarantee
+                            p
+                                | Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint Velit officia.
