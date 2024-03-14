@@ -14,14 +14,9 @@ block content
                                 | Category 
                             nav 
                                 ul 
-                                    li
-                                        p Mountain Bikes
-                                    li 
-                                        p Road Bikes
-                                    li 
-                                        p Hybrid Bikes
-                                    li 
-                                        p Kids Bikes
+                                    each text in ["Mountain Bikes", "Road Bikes", "Hybrid Bikes", "Kids Bikes"]
+                                        li 
+                                            p(id="bike") #{text}
                     .main__category-images 
                         .main__category-images-slider 
                             swiper-container.mySwiper(pagination='true' pagination-type='fraction' autoplay-delay="2500" autoplay-disable-on-interaction="false")
@@ -34,7 +29,7 @@ block content
                                 swiper-slide
                                     img(src="img/road_bike4.png", alt="")
                         .main__category-images-photo 
-                            img(src="img/road_bike5.png", alt="")
+                            img(src="img/road_bike5.png", alt="", id="image_bike")
         // main-product
         section.main__product
             .container 
