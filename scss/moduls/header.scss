@@ -197,3 +197,32 @@ header{
         }
     }
 }
+@media screen and (max-width: 1315px){
+    header main .wraper .header__right_block{
+        margin-top: 140px;
+        transition: .2s;
+    }
+}
+@media screen and (max-width:1270px){
+    header main .wraper{
+        flex-direction: column;
+        height:1310px;
+
+        .header__left_block{
+            width: 100%;
+
+            &-info{
+                gap: 40px;
+            }
+        }
+        .header__right_block{
+            margin-top: 0;
+            height: 100%;
+
+            span{
+                top:40%;
+                transition: .2s;
+            }
+        }
+    }
+}
