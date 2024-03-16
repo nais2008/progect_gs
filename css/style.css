@@ -366,6 +366,8 @@ footer .footer__email-ss nav ul li {
 footer .footer__email-ss nav ul li img {
   -webkit-transform: translate(30%, 30%);
           transform: translate(30%, 30%);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 footer .footer__email-ss nav ul li:nth-child(2) img, footer .footer__email-ss nav ul li:nth-child(4) img {
   -webkit-transform: translate(40%, 40%);
