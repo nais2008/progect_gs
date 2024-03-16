@@ -464,6 +464,9 @@ main.main .main__category .container .wraper .main__category-title-navigation na
           flex-direction: column;
   gap: 10px;
 }
+main.main .main__category .container .wraper .main__category-title-navigation nav ul li p {
+  cursor: pointer;
+}
 main.main .main__category .container .wraper .main__category-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -725,6 +728,7 @@ main.main .main__info .container .main__info-wraper .main__info-wraper-secondBlo
   }
   main .main__category .container .wraper .main__category-images .main__category-images-slider {
     width: 684px !important;
+    height: auto;
   }
   main .main__category .container .wraper .main__category-images .main__category-images-slider swiper-container {
     width: 100%;

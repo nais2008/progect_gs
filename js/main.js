@@ -1,18 +1,25 @@
-let vibor_bike = document.getElementById("bike");
+const bikeCategories = document.querySelectorAll('#bike');
+const bikeImage = document.getElementById('image_bike');
 
-vibor_bike.addEventListener("click", function(){
-    let slider = document.querySelector("swiper-container");
-    let image = document.querySelector("#image_bike")
+bikeCategories.forEach(category => {
+    category.addEventListener('click', () => {
+        const categoryName = category.textContent.trim();
+        let imagePrefix = '';
+        switch (categoryName) {
+        case 'Mountain Bikes':
+            imagePrefix = 'mountain_bike';
+            break;
+        case 'Road Bikes':
+            imagePrefix = 'road_bike';
+            break;
+        case 'Hybrid Bikes':
+            imagePrefix = 'hybrid_bike';
+            break;
+        case 'Kids Bikes':
+            imagePrefix = 'kids_bike';
+            break;
+        }
+        bikeImage.src = `img/${imagePrefix}5.png`;
 
-    if (vibor_bike.textContent === "Mountain Bikes"){
-        slider.innerHTML = "<swiper-slide> <img src='img/mountain_bikes1.png' alt=''></swiper-slide><swiper-slide><img src='img/mountain_bikes2.png' alt=''></swiper-slide><swiper-slide><img src='img/mountain_bikes3.png' alt=''></swiper-slide><swiper-slide><img src='img/mountain_bikes4.png' alt=''></swiper-slide>";
-        image.src = "img/mountain_bikes5.png";
-        vibor_bike.style.fontWeight = 900;
-
-    }
-    if (vibor_bike.textContent === "Road Bikes"){
-        vibor_bike.style.fontWeight = 900;
-        slider.innerHTML = "<swiper-slide> <img src='img/mountain_bikes1.png' alt=''></swiper-slide><swiper-slide><img src='img/mountain_bikes2.png' alt=''></swiper-slide><swiper-slide><img src='img/mountain_bikes3.png' alt=''></swiper-slide><swiper-slide><img src='img/mountain_bikes4.png' alt=''></swiper-slide>";
-        image.src = "img/road_bikes5.png";
-    }
+    });
 });

@@ -32,6 +32,10 @@ main.main{
                             display: flex;
                             flex-direction: column;
                             gap:10px;
+
+                            li p{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -252,6 +256,7 @@ main.main{
 
                 .main__category-images-slider{
                     width: 684px !important;
+                    height:auto;
 
                     swiper-container {
                         width: 100%;
